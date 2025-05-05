@@ -167,7 +167,8 @@ body {
     background: #2c2c2c;
     border-radius: 10px;
     overflow: hidden;
-    width: 250px;
+    width: 90%;
+    max-width: 300px;
     cursor: pointer;
     transition: transform 0.3s;
     box-shadow: 0 0 10px #f72585;
@@ -440,4 +441,51 @@ body {
     align-content: center;
     flex-wrap: wrap;
     margin: 25px;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left img {
+    margin: auto;
+  }
+
+  .about-cards {
+    flex-direction: column;
+  }
+
+  .boite {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orb {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 80px;
+  }
+
+  .timeline-box {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
 }
