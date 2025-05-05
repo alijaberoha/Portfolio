@@ -5,9 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./public/css/style.css">
+    <script defer src="./main.js"></script>
 </head>
 <body>
-        <div class="orb"></div>
-
+ <header>
+    <nav class="navbar">
+        <div class="logo">On My Way</div>
+            <ul class="nav-links">
+                <li><a href="#hero">MySelf</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+    </nav>
+</header>
+<div class="orb" id="scrollTopBtn" title="Back to top">
+    <div class="flee">_-_-_-_-</div>
+</div>
+     <div class="titre">
+        <h1>MySelf</h1>
+    </div>
+<section id="hero" class="etudes-section" id="a-propos">
+    <div class="scroll-down">
+        <a href="#about"><span>↓</span></a>
+      </div>
+      
+    <div class="etudes-container">
+      <div class="photo-profil">
+        <img src="public/img/90af6257-7948-450a-9879-c6b205d71eb7.jpg" alt="Ma photo">
+      </div>
+  
+      <div class="timeline-box">
+        <button id="prevBtn" class="arrow-btn">←</button>
+  
+        <div class="content" id="timelineContent">
+          <h2>2022</h2>
+          <p>End of my general secondary studies.</p>
+        </div>
+  
+        <button id="nextBtn" class="arrow-btn">→</button>
+      </div>
+    </div>
+  </section>
+  <section id="project" class="project" id="projets">
+    <h2>Mes Projets</h2>
+    <div class="boite">
+      <div class="pro-card" data-id="0">
+        <img src="public/img/Cbienbonimg.PNG" alt="Projet 1">
+        <h3>CBIENBON</h3>
+      </div>
+      <div class="pro-card" data-id="1">
+        <img src="public/img/todolistimg.PNG" alt="Projet 2">
+        <h3>ToDoList</h3>
+      </div>
+      <div class="pro-card" data-id="2">
+        <img src="public/img/romykimg.PNG" alt="Romyk">
+        <h3>PRomyk</h3>
+      </div>
+      <!-- Ajoute d'autres projets si tu veux -->
+    </div>
+  
+    <!-- MODALE -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <img src="public/img/90af6257-7948-450a-9879-c6b205d71eb7.jpg" alt="Ali's photo">
+      </div>
+      <div class="about-right">
+        <h2>About Me</h2>
+        <p>
+          I'm Ali Oulad, a passionate junior web developer currently training in web development. 
+          I'm organized, curious, and motivated to grow in the tech world by building clean and creative interfaces.
+        </p>
+  
+        <div class="about-cards">
+          <div class="card">
+            <h3>🛠️ Technical Skills</h3>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>Python, Java</li>
+              <li>SASS, Bootstrap, Git & GitHub</li>
+              <li>Microsoft Office, AI (ChatGPT)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🌍 Languages</h3>
+            <ul>
+              <li>French — Native</li>
+              <li>Arabic — Native</li>
+              <li>English — B1</li>
+              <li>Dutch — A2</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>🤝 Soft Skills</h3>
+            <ul>
+              <li>Teamwork & Collaboration</li>
+              <li>Client Communication</li>
+              <li>Event Organization</li>
+              <li>Problem Solving & Autonomy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Ali Oulad</h3>
+        <p>Junior Web Developer based in Brussels</p>
+        <p><strong>Email:</strong> <a href="mailto:alijaberoha@hotmail.com">alijaberoha@hotmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+32486922402">+32 486 92 24 02</a></p>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <p>If you're interested in working together, feel free to reach out!</p>
+        
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/ton-lien-linkedin" target="_blank" class="btn-linkedin">LinkedIn</a>
+          <a href="https://wa.me/32486922402" target="_blank" class="btn-whatsapp">WhatsApp</a>
+        </div>
+  
+        <a href="mailto:alijaberoha@hotmail.com?subject=Appointment%20Request" class="btn-rdv">📅 Book a Meeting</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 Ali Oulad. All rights reserved.</p>
+  </footer>
+  
 </body>
 </html>
